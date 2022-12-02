@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MiniCalculadora</string>
+    <string name="title_resultado">0</string>
+    <string name="b_suma">ADD</string>
+    <string name="b_resta">SUBTRACT</string>
+    <string name="b_reset">CLEAR</string>
+    <string name="nextView">OTHER OPERATIONS</string>
+    <string name="close">EXIT</string>
+    <string name="b_multi">MULTIPLY</string>
+    <string name="b_div">DIVIDE</string>
+    <string name="b0">0</string>
+</resources>

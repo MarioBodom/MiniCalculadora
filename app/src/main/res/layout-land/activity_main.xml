@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/fondo"
+    style="@style/AppTheme"
+    android:paddingTop="15dp">
+
+
+    <TextView
+        android:id="@+id/resultado"
+        style="@style/resultado"
+        android:layout_width="700dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/title_resultado"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="700dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado">
+
+        <TableRow
+            style="@style/tableRows"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/botones_general"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/botones_general"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/botones_general"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/botones_general"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/botones_general"
+                android:text="9" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/tableRows"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/botones_general"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button10"
+                style="@style/botones_general"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/botones_general"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/botones_general"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/botones_general"
+                android:text="4" />
+
+
+        </TableRow>
+
+        <TableRow
+            style="@style/tableRows"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <Button
+                android:id="@+id/igual"
+                style="@style/botones_operaciones"
+                android:layout_span="1"
+                android:text="="
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/suma"
+                style="@style/botones_operaciones"
+                android:layout_span="2"
+                android:text="@string/b_suma" />
+
+            <Button
+                android:id="@+id/resta"
+                style="@style/botones_operaciones"
+                android:layout_span="2"
+                android:text="@string/b_resta" />
+        </TableRow>
+
+        <TableRow
+            style="@style/tableRows"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/clear"
+                style="@style/botones_operaciones"
+                android:layout_span="5"
+                android:text="@string/b_reset" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
